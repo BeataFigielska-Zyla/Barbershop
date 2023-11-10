@@ -73,6 +73,7 @@ header {
     width: 1070px;
     height: 680px;
     flex-shrink: 0;
+    padding: 0;
 }
 
 .navigation {
@@ -80,6 +81,7 @@ header {
     gap: 30px;
     padding-left: 100px;
     padding-top: 52px;
+  
    
 }
 
@@ -101,11 +103,9 @@ header {
     font-weight: 600;
     line-height: 15px;
     letter-spacing: 2.2px;
+    text-transform: ;
 }
 
-.address {
-    padding-top: 52px;
-}
 
 .phone {
     color: var(--white-color);
@@ -117,6 +117,7 @@ header {
     letter-spacing: 1.2px;
     text-transform: uppercase;
     margin-left: 254px;
+    padding-top: 52px;
 }
 
 .button-header {
