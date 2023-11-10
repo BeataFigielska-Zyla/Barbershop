@@ -1,6 +1,7 @@
 :root {
-    --evenwood-color: #303030
-
+    --evenood-color: #303030;
+    --orange-color: #FF6C00;
+    --white-color: #FFF;
     --mytransition-duration: 250ms;
     --mytransition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -55,13 +56,91 @@ h1, h2, h3, h4, h5, h6, p, a {
     cursor: pointer;
 }
 
-
+header {
+    display: flex;
+}
 .logo-aside {
     display: flex;
     flex-direction: column;
+    width: 100px;
+    height: 680px;
+    flex-shrink: 0;
 }
 
+.header-container {
+    display: flex;
+    background-image: url(../images/images/background.jpg);
+    width: 1070px;
+    height: 680px;
+    flex-shrink: 0;
+}
 
+.navigation {
+    display: flex;
+    gap: 30px;
+    padding-left: 100px;
+    padding-top: 52px;
+   
+}
+
+.nav-link {
+    color: #FFF;
+    font-family: Open Sans, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+.aside-navigation {
+    color: #303030;
+    font-family: Open Sans, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 2.2px;
+}
+
+.address {
+    padding-top: 52px;
+}
+
+.phone {
+    color: var(--white-color);
+    font-family: Open Sans, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-left: 254px;
+}
+
+.button-header {
+    display: flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid #FF6C00;
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    height: 40px;
+    background-color: transparent;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
 
 /* ================================================= MOBILE ========================================= */
 
