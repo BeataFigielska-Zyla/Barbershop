@@ -55,18 +55,53 @@ h1, h2, h3, h4, h5, h6, p, a {
 .cursor {
     cursor: pointer;
 }
+/* HEADER */
 
 header {
     display: flex;
 }
-.logo-aside {
+
+/* LOGO */
+
+.logo-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 100px;
     height: 680px;
     flex-shrink: 0;
 }
 
+.icon-logo-link {
+    padding-left: 0;
+    padding-top: 22px;
+    padding-right: 24px;
+}
+
+.icon-logo {
+    width: 76px;
+    height: 76px;
+}
+
+.rotate-social-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transform: rotate(270deg);
+    padding-left: 33px;
+    padding-bottom: 40px;
+    
+}
+
+.rotate-social-links::before {
+    content: '';
+        height: 1px;
+        width: 60px;
+        background-color: #303030;
+        flex-shrink: 0;
+    }
+
+/* HERO */
 
 .header-container {
     display: flex;
@@ -86,9 +121,7 @@ header {
     display: flex;
     gap: 30px;
     padding-left: 100px;
-    padding-top: 52px;
-  
-   
+    padding-top: 52px;  
 }
 
 .nav-link {
@@ -109,22 +142,6 @@ header {
     font-weight: 600;
     line-height: 15px;
     letter-spacing: 2.2px;
-    
-}
-
-.rotate {
-    display: flex;
-    gap: 40px;
-    transform: rotate(270deg);
-    padding-letf: 33px;
-    padding-bottom: 40px;
-    margin-top: 272px;
-}
-
-.aside-list {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
     
 }
 
@@ -182,29 +199,20 @@ header {
         font-weight: 600;
         line-height: normal;
         text-transform: uppercase;
-        display:flex     
+        display:flex;
+        align-items: center;  
+       
 }
 
 .header-p::before {
     content: '';
-    width: 1px;
-    height: 60px;
-    transform: rotate(90deg);
+    width: 60px;
+    height: 1px;
     flex-shrink: 0;
     background: rgba(157, 164, 189, 0.60);
+    margin-right: 20px;
 }
 
-
-
-.line {
-    display: flex;
-    width: 1px;
-        height: 60px;
-        transform: rotate(90deg);
-        flex-shrink: 0;
-        background: rgba(157, 164, 189, 0.60);
-
-}
 
 h1 {
     color: #FFF;
