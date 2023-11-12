@@ -119,6 +119,7 @@ ul {
     letter-spacing: 0.02em;
     padding: 24px 0;
     transition: color var(--mytransition-duration) var(--mytransition-timing-function);
+    
 }
 
 .contact-link:hover {

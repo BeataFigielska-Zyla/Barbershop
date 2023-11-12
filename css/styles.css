@@ -78,7 +78,7 @@ header {
 }
 
 .icon-logo-link {
-    padding-left: 0;
+    padding-leonline-booking
     padding-top: 22px;
     padding-right: 24px;
 }
@@ -132,6 +132,7 @@ header {
     height: 680px;
     flex-shrink: 0;
     padding: 0;
+    position: relative;
 }
 
 .nav-container {
@@ -180,7 +181,7 @@ header {
     color: var(--orange-color);
 }
 
-.button-header {
+.button-online-booking {
     display: flex;
     padding: 12px 20px;
     justify-content: center;
@@ -203,9 +204,9 @@ header {
     margin-right: 20px;  
 }
 
-.button-header:hover,
-.button-header:focus,
-.button-header:active {
+.button-online-booking:hover,
+.button-online-booking:focus,
+.button-online-booking:active {
     color: var(--orange-color);
 }
 
@@ -260,6 +261,66 @@ h1 {
     line-height: 30px;
     letter-spacing: 0.36px;
     width: 360px;
+}
+
+.header-buttons-div {
+    display: flex;
+    gap: 64px;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: 144px;
+}
+
+.button-back {
+    color: var(--lightgrey-color);
+    font-family: Open Sans;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 1.1px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+
+.button-back::after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    flex-shrink: 0;
+    background: rgba(157, 164, 189, 0.60);
+    bottom: -8px;
+    position: absolute;
+    left: 0;
+}
+
+.button-foward {
+    color: var(--lightesgray-color);
+    font-family: Open Sans;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 1.1px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+
+.button-foward::after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    flex-shrink: 0;
+    background: rgba(157, 164, 189, 0.60);
+    bottom: -8px;
+    position: absolute;
+    right: 0;
+}
+
+.svg-secoration {
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
 
 
