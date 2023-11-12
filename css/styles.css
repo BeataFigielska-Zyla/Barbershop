@@ -216,7 +216,7 @@ header {
     padding-left: 100px;
     margin-top: 204px;
     gap: 20px;
-    
+    position: relative;
 }
 
 .header-p {
@@ -294,6 +294,17 @@ h1 {
     left: 0;
 }
 
+.button-back:hover,
+.button-back:focus,
+.button-back:active {
+    color: var(--white-color);
+}
+
+.button-back:hover + .button-back::after {
+    background-color: var(--white-color);
+}
+
+
 .button-foward {
     color: var(--lightesgray-color);
     font-family: Open Sans;
@@ -317,10 +328,16 @@ h1 {
     right: 0;
 }
 
-.svg-secoration {
+.button-foward:hover,
+.button-foward:focus,
+.button-foward:active {
+    color: var(--white-color);
+}
+
+.svg-decoration {
     position: absolute;
-    left: 0px;
-    top: 0px;
+    right: 20px;
+    top: 325px;
 }
 
 
