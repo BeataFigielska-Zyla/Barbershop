@@ -2,14 +2,17 @@
     --evenood-color: #303030;
     --orange-color: #FF6C00;
     --white-color: #FFF;
+    --grey-color: #555555;
+    --lightgrey-color: #9DA4BD;
+    --lightesgray-color: rgba(157, 164, 189, 0.60);
     --mytransition-duration: 250ms;
     --mytransition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
-    font-family: Roboto, sans-serif;
-    color: var(--slate-color);
+    font-family: Open Sans, Raleway, sans-serif;
     background-color: var(--white-color);
+    color: ;
 }
 
 * {
@@ -59,6 +62,8 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 header {
     display: flex;
+    max-width: 1600px;
+    justify-content: center;
 }
 
 /* LOGO */
@@ -97,9 +102,25 @@ header {
     content: '';
         height: 1px;
         width: 60px;
-        background-color: #303030;
+        background-color: var(--evenood-color);
         flex-shrink: 0;
     }
+
+.social-links {
+    color: var(--evenood-color);
+    font-family: Open Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 2.2px;
+        }
+
+.social-links:hover,
+.social-links:focus,
+.social-links:active {
+    color: var(--orange-color);
+}       
 
 /* HERO */
 
@@ -117,7 +138,7 @@ header {
     display: flex;
 }
 
-.navigation {
+.nav-list {
     display: flex;
     gap: 30px;
     padding-left: 100px;
@@ -134,15 +155,10 @@ header {
     letter-spacing: 1.2px;
 }
 
-.nav-li {
-    color: #303030;
-    font-family: Open Sans;
-    font-size: 11px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 15px;
-    letter-spacing: 2.2px;
-    
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    color: var(--orange-color);
 }
 
 .phone {
@@ -158,13 +174,19 @@ header {
     padding-top: 52px;
 }
 
+.phone:hover,
+.phone:focus,
+.phone:active {
+    color: var(--orange-color);
+}
+
 .button-header {
     display: flex;
     padding: 12px 20px;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
-    border: 1px solid #FF6C00;
+    border: 1px solid var(--orange-color);
     color: var(--white-color);
     text-align: center;
     font-family: Open Sans;
@@ -178,8 +200,13 @@ header {
     background-color: transparent;
     margin-top: 40px;
     margin-left: 40px;
-    margin-right: 20px;
-   
+    margin-right: 20px;  
+}
+
+.button-header:hover,
+.button-header:focus,
+.button-header:active {
+    color: var(--orange-color);
 }
 
 .headline-container {
@@ -218,14 +245,14 @@ h1 {
     color: #FFF;
     font-family: Raleway, sans-serif;
     font-size: 72px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 85px;
-        letter-spacing: 3.6px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 85px;
+    letter-spacing: 3.6px;
 }
 
 .header-p-two {
-    color: #9DA4BD;
+    color: var(--lightgrey-color);
     font-family: Open Sans;
     font-size: 18px;
     font-style: normal;
