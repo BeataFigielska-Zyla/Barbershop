@@ -421,7 +421,6 @@ h1 {
 
 .button-online-booking-about {
     display: flex;
-    padding: 12px 19px;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
@@ -429,7 +428,7 @@ h1 {
     color: var(--evenood-color);
     background-color: transparent;
     height: 40px;
-    width: 160px;
+    width: 158px;
     text-align: center;
     font-family: Open Sans, sans-serif;
     font-size: 12px;
@@ -445,4 +444,12 @@ h1 {
 .button-online-booking-about:active {
     background-color: var(--orange-color);
     color: var(--white-color);
+}
+
+/* SECTION 2 */
+
+.section-two {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/images/bg-img_desk@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
