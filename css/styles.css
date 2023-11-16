@@ -5,6 +5,7 @@
     --grey-color: #555555;
     --lightgrey-color: #9DA4BD;
     --lightesgray-color: rgba(157, 164, 189, 0.60);
+    --cream-color: #F7F7F7;
     --mytransition-duration: 250ms;
     --mytransition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -409,7 +410,7 @@ h1 {
 }
 
 .p-about-three {
-    color: #555;
+    color: var(--grey-color);
     font-family: Open Sans, sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -561,4 +562,52 @@ h1 {
 .button-online-booking-pricing:focus,
 .button-online-booking-pricing:active {
     background-color: var(--orange-color);
+}
+
+/* SECTION 3 */
+
+.benefits-section {
+    display: flex;
+    gap: 130px;
+    justify-content: center;
+}
+
+.benefits-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+   
+}
+
+.benefits-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cream-color);
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.10);
+    height: 133px;
+    max-width: 170px;
+    gap: 6px;
+    padding: 20px 24px;
+    width: calc((100% - 30px)/2);
+}
+
+.cards-quantity {
+    color: var(--evenood-color);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 2.1px;
+}
+
+.cards-description {
+    color: var(--evenood-color);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
 }
