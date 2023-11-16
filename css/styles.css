@@ -116,6 +116,12 @@ header {
     flex-shrink: 0;
 }
 
+.finger-rotate {
+    position: relative;
+        display: flex;
+        justify-content: center;
+}
+
 .social-links {
     color: var(--evenood-color);
     font-family: Open Sans;
@@ -124,12 +130,22 @@ header {
     font-weight: 600;
     line-height: 15px;
     letter-spacing: 2.2px;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .social-links:hover,
 .social-links:focus,
 .social-links:active {
     color: var(--orange-color);
+}
+
+.svg-finger-rotate {
+    position: absolute;
+    bottom: -16px;
+    transform: rotate(45deg);
+
 }
 
 /* HERO */
@@ -154,6 +170,18 @@ header {
     gap: 30px;
     padding-left: 100px;
     padding-top: 52px;
+}
+
+.finger-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.svg-finger-about {
+    position: absolute;
+    bottom: -11px;
+    fill: var(--white-color);
 }
 
 .nav-link {
@@ -678,4 +706,119 @@ h1 {
     line-height: 26px;
     letter-spacing: 0.28px;
     max-width: 500px;
+}
+
+/* SECTION 4 */
+
+.p-barbers {
+    font-family: Open Sans, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: var(--evenood-color);
+    display: flex;
+    align-items: center;
+}
+
+.p-barbers::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: var(--evenood-color);
+    margin-right: 20px;
+}
+
+.barbers-headline {
+    color: var(--evenood-color);
+    font-family: Raleway;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 2.1px;
+    max-width: 430px;
+    margin-top: 20px;
+}
+
+.barbers-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 44px;
+    
+}
+
+.barbers-div {
+    margin-top: 30px;
+}
+
+.barbers-name {
+    color: var(--evenood-color);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+    margin-bottom: 3px;
+}
+
+.barbers-profession-name {
+    color: var(--orange-color);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.28px;
+}
+
+.barbers-social-media-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+
+.barbers-social-media-li {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.barbers-social-media-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.barber-svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--evenood-color);
+}
+
+.barber-svg:hover,
+.barber-svg:focus,
+.barber-svg:active {
+    fill: var(--orange-color);
+}
+
+.finger {
+    position: relative;
+}
+
+.svg-finger {
+    position: absolute;
+    bottom: -8px;
+    
 }
