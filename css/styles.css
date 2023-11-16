@@ -710,6 +710,10 @@ h1 {
 
 /* SECTION 4 */
 
+.barbers-section {
+    background-color: var(--cream-color);
+}
+
 .p-barbers {
     font-family: Open Sans, sans-serif;
     font-size: 11px;
@@ -821,4 +825,32 @@ h1 {
     position: absolute;
     bottom: -8px;
     
+}
+
+/* SECTION 5 */
+
+.gallery-p {
+    color: var(--evenood-color);
+    font-family: Open Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.gallery-p::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: var(--evenood-color);
+    margin-right: 20px;
+}
+
+.gallery-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 44px;
 }
